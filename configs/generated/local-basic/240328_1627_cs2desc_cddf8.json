@@ -1,0 +1,6 @@
+{
+    "_base_": "../../xxformer/cs2dsec_e2vid_online_semi_xxformer.py",
+    "name": "240328_1627_cs2desc_cddf8",
+    "work_dir": "work_dirs/local-basic/240328_1627_cs2desc_cddf8",
+    "gpus": 2
+}
