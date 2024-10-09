@@ -91,4 +91,4 @@ All the training details are similar to [here](https://github.com/lhoyer/DAForme
 ### Citation:
 If you find our paper and code useful in your research, please consider citation.
 
-@article{Jing, L., Ding, Y., Gao, Y., Wang, Z., Yan, X., Wang, D., ... & Li, X. (2024). HPL-ESS: Hybrid Pseudo-Labeling for Unsupervised Event-based Semantic Segmentation. In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (pp. 23128-23137).}
+/@article {Jing, L., Ding, Y., Gao, Y., Wang, Z., Yan, X., Wang, D., ... & Li, X. (2024). HPL-ESS: Hybrid Pseudo-Labeling for Unsupervised Event-based Semantic Segmentation. In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (pp. 23128-23137).}
