@@ -86,3 +86,9 @@ python run_experiments.py --config configs/xxformer/gta2dsec_e2vid_offline_semi_
 
 ### Tips:
 All the training details are similar to [here](https://github.com/lhoyer/DAFormer?tab=readme-ov-file#daformer-improving-network-architectures-and-training-strategies-for-domain-adaptive-semantic-segmentation), only the files in the mmseg need to be changed, especially loading dataset and 'dacs' model file. The dataset processing, especially the event data, can refer to this [here](https://github.com/uzh-rpg/ess).
+
+
+### Citation:
+If you find our paper and code useful in your research, please consider citation.
+
+@article{Jing, L., Ding, Y., Gao, Y., Wang, Z., Yan, X., Wang, D., ... & Li, X. (2024). HPL-ESS: Hybrid Pseudo-Labeling for Unsupervised Event-based Semantic Segmentation. In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (pp. 23128-23137).}
