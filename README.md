@@ -70,6 +70,9 @@ Download leftImg8bit_trainvaltest.zip and gt_trainvaltest.zip from [here](https:
 
 clone this [repository](https://github.com/uzh-rpg/rpg_e2vid) and run on DSEC datasets to reconstruct the event streams into simulated images, save to ```data/DSEC_Semantic_e2vid_offline```
 
+#### Off-line sample 
+run sample_percentage.py offline and randomly extract part of the data (1/16) as hybird-label in training.
+
 ### Training
 
 Firstly, download the MiT ImageNet weights (b3-b5) provided by [SegFormer](https://github.com/NVlabs/SegFormer?tab=readme-ov-file#training) from their [OneDrive](https://connecthkuhk-my.sharepoint.com/:f:/g/personal/xieenze_connect_hku_hk/EvOn3l1WyM5JpnMQFSEO5b8B7vrHw9kDaJGII-3N9KNhrg?e=cpydzZ) and put them in the folder `pretrained/`. Further, download the checkpoint of our model and extract it to the folder `work_dirs/`.
@@ -81,11 +84,5 @@ Firstly, download the MiT ImageNet weights (b3-b5) provided by [SegFormer](https
 python run_experiments.py --config configs/xxformer/gta2dsec_e2vid_offline_semi_xxformer.py
 ```
 
-For the experiments in our paper (e.g. network architecture comparison, component ablations, ...), we use a system to automatically generate and train the configs:
-
-```
-python run_experiments.py --exp <ID>
-```
-
-More information about the available experiments and their assigned IDs, can be found in [experiments.py](link). The generated configs will be stored in `configs/generated/`.
-
+Tips:
+All the training details are similar to [here](https://github.com/lhoyer/DAFormer?tab=readme-ov-file#daformer-improving-network-architectures-and-training-strategies-for-domain-adaptive-semantic-segmentation), only the files in the mmseg need to be changed, especially loading dataset and 'dacs' model file. The dataset processing, especially the event data, can refer to this [here](https://github.com/uzh-rpg/ess).
