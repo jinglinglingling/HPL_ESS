@@ -67,11 +67,10 @@ Download leftImg8bit_trainvaltest.zip and gt_trainvaltest.zip from [here](https:
 
 #### E2VID data
 
-
 clone this [repository](https://github.com/uzh-rpg/rpg_e2vid) and run on DSEC datasets to reconstruct the event streams into simulated images, save to ```data/DSEC_Semantic_e2vid_offline```
 
-#### Off-line sample 
-run sample_percentage.py offline and randomly extract part of the data (1/16) as hybird-label in training.
+#### Off-line sampling 
+run sample_percentage.py offline and randomly extract part of the data (1/16) as hybird-label in training, save to ```data/DSEC_Semantic_e2vid_offline/unlabel6.txt```.
 
 ### Training
 
@@ -84,5 +83,5 @@ Firstly, download the MiT ImageNet weights (b3-b5) provided by [SegFormer](https
 python run_experiments.py --config configs/xxformer/gta2dsec_e2vid_offline_semi_xxformer.py
 ```
 
-Tips:
+### Tips:
 All the training details are similar to [here](https://github.com/lhoyer/DAFormer?tab=readme-ov-file#daformer-improving-network-architectures-and-training-strategies-for-domain-adaptive-semantic-segmentation), only the files in the mmseg need to be changed, especially loading dataset and 'dacs' model file. The dataset processing, especially the event data, can refer to this [here](https://github.com/uzh-rpg/ess).
