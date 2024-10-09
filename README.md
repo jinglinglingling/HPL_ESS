@@ -28,6 +28,7 @@ To start:
    pip install ninja
    pip install flash-attn
    ~~~
+3. Unzip mmseg.zip   
 
 ### Data Preparation
 
