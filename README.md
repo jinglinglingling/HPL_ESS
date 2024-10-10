@@ -1,4 +1,4 @@
-# HPL_ESS
+# HPL-ESS
 
 HPL-ESS: Hybrid Pseudo-Labeling for Unsupervised Event-based Semantic Segmentation
 
